@@ -1,0 +1,21 @@
+account.1.auth_name={{phone_number}}
+account.1.display_name={{phone_number}}
+account.1.user_name={{phone_number}}
+account.1.password={{password}}
+account.1.enable=1
+account.1.sip_server.1.expires=300
+features.config_dsskey_length=1
+screensaver.wait_time=3600
+static.network.dhcp_host_name={{phone_name}}
+local_time.date_format=5
+local_time.ntp_server1={{var_ntp1}}
+local_time.ntp_server2={{var_ntp2}}
+local_time.time_zone={{tz}}
+{% if Cell %}
+{% for id, values in Cell.items() %}
+linekey.{{id}}.label={{values[1]}}
+linekey.{{id}}.type=16
+linekey.{{id}}.value={{values[0]}}
+linekey.{{id}}.line=1
+{%- endfor %}
+{%- endif %}

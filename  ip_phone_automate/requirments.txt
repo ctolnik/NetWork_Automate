@@ -1,0 +1,17 @@
+autopep8==1.5.7
+certifi==2021.5.30
+chardet==4.0.0
+flake8==3.9.2
+idna==2.10
+Jinja2==3.0.1
+jirainsight==1.0
+ldap3==2.9
+MarkupSafe==2.0.1
+mccabe==0.6.1
+psycopg2-binary==2.9.1
+pyasn1==0.4.8
+pycodestyle==2.7.0
+pyflakes==2.3.1
+requests==2.25.1
+toml==0.10.2
+urllib3==1.26.5
